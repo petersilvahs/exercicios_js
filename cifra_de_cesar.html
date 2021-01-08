@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A cifra de Cesar</title>
+</head>
+<body>
+    <script>
+        var aviso = prompt("Qual mensagem será encriptada?");
+        var deslocamento = prompt("Qual deslocamento será utilixzado?");
+
+        function cifraDeCesar(mensagem, deslocamento){
+            var avisoAlterado = [];
+            mensagem = mensagem.toLowerCase();
+
+                for(var i = 0; aviso.length; i++){
+                    avisoAlterado.push(String.fromCharCode((aviso.charCodeAt(aviso[i])) + (deslocamento % 26)));
+
+                }
+                console.log("A mensagem alterada foi " + avisoAlterado);
+        }
+        cifraDeCesar(aviso,deslocamento);
+    </script>
+    
+</body>
+</html>

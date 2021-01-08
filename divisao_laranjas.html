@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão entre amigos</title>
+</head>
+
+    <script>
+
+        function dividirAsLaranjas (laranjas , vizinhos) {
+
+            return laranjas % vizinhos;
+        }
+
+        var quantasLaranjas = prompt ("Quantas laranjas serão divididas?")
+        var quantosVizinhos = prompt ("Quantos vão dividir as laranjas?")
+
+         document.write("Restará para Joselino " + dividirAsLaranjas(quantasLaranjas , quantosVizinhos) + " laranjas" )
+
+    </script>
+
+</body>
+</html>

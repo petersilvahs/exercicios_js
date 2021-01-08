@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria da Resilia</title>
+</head>
+<body>
+    <script>
+        function calculoImposto(valorReal){
+            return valorReal*0.85; //valor do imposto cobrado(br)
+        }
+
+        function lucroAdquirido(valorReal,custo){
+            var dispesa = calculoImposto(valorReal);
+            return valorReal = (custo + dispesa);
+        }
+
+        var saborPizza = prompt("Escolha seu sabor: ");
+        var valorPizza = parseInt(prompt("Valor de compra pelo cliente: "));
+        var custoPizza = parseInt(prompt("Custo para produzir: "));
+        var imposto = calculoImposto (valorPizza);
+        var lucroFinal = lucroAdquirido(valorPizza,custoPizza);
+
+        document.write("O lucro obtido pela venda da pizza de " + saborPizza + " foi de R$" + lucroFinal + " e o valor do imposto pago doi de R$" + imposto);
+
+
+    </script>
+</body>
+</html>
